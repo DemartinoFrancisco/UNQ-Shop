@@ -1,4 +1,4 @@
-package Catalogo;
+package Item;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -3,7 +3,7 @@ package Busqueda;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import Catalogo.Item;
+import Item.Item;
 
 
 
