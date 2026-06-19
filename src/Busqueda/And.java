@@ -27,5 +27,5 @@ public class And implements Criterio {
     }
     
     
-    
+  
 }
