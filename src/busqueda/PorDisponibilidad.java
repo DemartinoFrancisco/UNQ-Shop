@@ -1,8 +1,8 @@
-package Busqueda;
+package busqueda;
 
 import java.util.List;
 
-import Item.Item;
+import item.Item;
 
 
 

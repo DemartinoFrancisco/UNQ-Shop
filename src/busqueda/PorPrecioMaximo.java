@@ -1,6 +1,6 @@
-package Busqueda;
+package busqueda;
 
-import Item.Item;
+import item.Item;
 
 
 

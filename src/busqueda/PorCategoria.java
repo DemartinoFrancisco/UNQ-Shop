@@ -1,7 +1,7 @@
-package Busqueda;
+package busqueda;
 
-import Item.Item;
-import Item.Producto;
+import item.Item;
+import item.Producto;
 
 
 

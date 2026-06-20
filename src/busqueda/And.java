@@ -1,12 +1,12 @@
-package Busqueda;
+package busqueda;
 
 import java.util.List;
 
-import Item.Item;
+import item.Item;
 
 
 
-public class Or implements Criterio {
+public class And implements Criterio {
 
 
 
@@ -14,7 +14,7 @@ public class Or implements Criterio {
 
 
 
-    public Or(List<Criterio> criterios) {
+    public And(List<Criterio> criterios) {
         this.criterios = criterios;
     }
 
@@ -23,9 +23,9 @@ public class Or implements Criterio {
     @Override
     public boolean satisface(Item item) {
         return this.criterios.stream()
-                             .anyMatch(criterio -> criterio.satisface(item));
+                             .allMatch(criterio -> criterio.satisface(item));
     }
     
     
-    
+  
 }

@@ -1,9 +1,9 @@
-package Busqueda;
+package busqueda;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import Item.Item;
+import item.Item;
 
 
 

@@ -1,4 +1,4 @@
-package Item;
+package item;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,8 @@ public abstract class Item {
     private double precioBase;
     protected double descuento;
     private double peso;
-    private Map<String, Object> atributosDinamicos;
+    private Map<String, Object> atributosDinamicos; // Los tipos primitivos como int o string si bien no son objects, al ponerlos en este map donde iria un object, java se da cuenta de que necesitas un object y no un tipo primitivo,
+    												// y lo "envuelven" en su clase wrapper (integer por ejemplo es la clase wrapper de int(su único atributo es un int pero tiene muchas más funcionalidades y puede recibir mensajes)).
 
     
     
