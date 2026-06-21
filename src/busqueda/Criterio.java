@@ -1,6 +1,6 @@
 package busqueda;
 
-import item.Item;
+import catalogo.Item;
 
 
 

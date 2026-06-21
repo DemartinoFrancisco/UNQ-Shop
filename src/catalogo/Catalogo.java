@@ -1,9 +1,9 @@
-package busqueda;
+package catalogo;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import item.Item;
+import busqueda.Criterio;
 
 
 

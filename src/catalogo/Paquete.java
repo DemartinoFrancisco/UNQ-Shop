@@ -1,4 +1,4 @@
-package item;
+package catalogo;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@ package busqueda;
 
 import java.util.List;
 
-import item.Item;
+import catalogo.Item;
 
 
 
