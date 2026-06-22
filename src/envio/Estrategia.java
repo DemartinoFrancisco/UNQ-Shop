@@ -1,6 +1,6 @@
 package envio;
 
-import Pedido.Pedido;
+import pedido.Pedido;
 
 
 

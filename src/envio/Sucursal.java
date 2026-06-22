@@ -1,7 +1,7 @@
 package envio;
 
-import Pedido.Pedido;
 import catalogo.Deposito;
+import pedido.Pedido;
 
 
 
