@@ -31,7 +31,7 @@ public class Borrador extends Estado {
     protected void actualizarEstado() {
         this.pedido.setFecha(LocalDate.now());
         
-        this.pedido.getCliente().getMedioDePago().pagar(this.pedido);
+        this.pedido.getCliente().getMedioDePago().procesarPago(this.pedido);
         
         this.pedido.decrementarStock();
         

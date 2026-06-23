@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import catalogo.Item;
 import envio.Estrategia;
+import pago.Cliente;
 
 
 
@@ -55,9 +56,21 @@ public class Pedido {
     public List<Item> getItems() {
         return this.items;
     }
-
-
     
+    
+    public double calcularTotalProductos() {
+        return this.items.stream()
+                         .mapToDouble(item -> item.getPrecioFinal())
+                         .sum();
+    }
+
+
+    public double calcularCostoEnvio() {
+        return this.metodoDeEnvio.calcularCostoDeEnvio(this, this.cliente.getDireccion());
+    }
+
+
+
  // mensajes protected (Exclusivos para que los usen las clases concretas estado)
     
     protected void setEstado(Estado nuevoEstado) {
@@ -98,21 +111,8 @@ public class Pedido {
     }
 
 
-    protected double calcularTotalProductos() {
-        return this.items.stream()
-                         .mapToDouble(item -> item.getPrecioFinal())
-                         .sum();
-    }
-
-
-    protected double calcularCostoEnvio() {
-        return this.metodoDeEnvio.calcularCostoDeEnvio(this, this.cliente.getDireccion());
-    }
-
-
     protected void registrarNotaDeCredito(double monto) {
-        // Acá simplemente podrías crear el objeto y agregarlo a una lista del cliente o del sistema.
-        // Ej: this.cliente.agregarNotaDeCredito(new NotaDeCredito(monto));
+        this.cliente.agregarNotaDeCredito(monto);
     }
 
     
