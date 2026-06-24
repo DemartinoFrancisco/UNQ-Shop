@@ -6,10 +6,11 @@ import java.util.List;
 import catalogo.Item;
 import envio.Estrategia;
 import pago.Cliente;
+import notificaciones.Observable;
 
 
 
-public class Pedido {
+public class Pedido extends Observable {
 
 
 
@@ -24,6 +25,7 @@ public class Pedido {
  // mensajes publicos (Los que usa el usuario desde el main por ejemplo)
     
     public Pedido(Cliente cliente, Estrategia metodoDeEnvio, Deposito deposito) {
+    	super();
         this.cliente = cliente;
         this.metodoDeEnvio = metodoDeEnvio;
         this.deposito = deposito;
@@ -68,6 +70,11 @@ public class Pedido {
     public double calcularCostoEnvio() {
         return this.metodoDeEnvio.calcularCostoDeEnvio(this, this.cliente.getDireccion());
     }
+    
+    
+    public Cliente getCliente() {
+        return this.cliente;
+    }
 
 
 
@@ -76,7 +83,8 @@ public class Pedido {
     protected void setEstado(Estado nuevoEstado) {
         Estado estadoAnterior = this.estado;
         this.estado = nuevoEstado;
-        this.notificarObservadores(estadoAnterior, nuevoEstado);
+        
+        this.notificarObservadores(this, estadoAnterior, nuevoEstado);
     }
 
 
@@ -105,10 +113,6 @@ public class Pedido {
         this.fecha = fecha;
     }
     
-    
-    protected Cliente getCliente() {
-        return this.cliente;
-    }
 
 
     protected void registrarNotaDeCredito(double monto) {
@@ -116,12 +120,5 @@ public class Pedido {
     }
 
     
-    
 
-    private void notificarObservadores(Estado viejo, Estado nuevo) {
-        // Lógica del patrón Observer (Módulo 2.5)
-    }
-    
-    
-    
 }
