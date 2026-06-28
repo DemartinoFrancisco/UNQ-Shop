@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import busqueda.Criterio;
+import reportes.ReporteVisitor;
 
 
 
@@ -25,6 +26,13 @@ public class Catalogo {
         return this.items.stream()
                          .filter(item -> criterio.satisface(item))
                          .collect(Collectors.toList());
+    }
+    
+    
+    public void accept(ReporteVisitor visitor) {
+        for (Item item : this.items) {
+            item.accept(visitor);
+        }
     }
 
     

@@ -1,7 +1,7 @@
 package pago;
 
+import libreriasEInterfacesExternas.ApiTransferencia;
 import pedido.Pedido;
-import libreriasExternas.ApiTransferencia;
 
 
 

@@ -1,7 +1,7 @@
 package busqueda;
 
 import java.util.List;
-
+import catalogo.Deposito;
 import catalogo.Item;
 
 

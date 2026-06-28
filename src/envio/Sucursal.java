@@ -28,7 +28,7 @@ public class Sucursal implements Estrategia {
     @Override
     public String estimarDiasDeEntrega(Pedido pedido) {
     	
-        boolean hayStock = this.deposito.tieneStock(pedido.getItems());
+        boolean hayStock = this.deposito.tieneStockDeItems(pedido.getItems());
         
         if (hayStock) {
             return "Inmediato";

@@ -1,7 +1,7 @@
 package envio;
 
-import libreriasExternas.CorreoArgentina;
-import libreriasExternas.Direccion;
+import libreriasEInterfacesExternas.CorreoArgentina;
+import libreriasEInterfacesExternas.Direccion;
 import pedido.Pedido;
 
 

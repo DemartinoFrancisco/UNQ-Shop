@@ -1,7 +1,7 @@
 package pago;
 
+import libreriasEInterfacesExternas.ApiBilleteraVirtual;
 import pedido.Pedido;
-import libreriasExternas.ApiBilleteraVirtual;
 
 
 

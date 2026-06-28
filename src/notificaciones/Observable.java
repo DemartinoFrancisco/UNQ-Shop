@@ -15,7 +15,7 @@ public abstract class Observable {
 
 
 
-    public Observable() {
+    protected Observable() {
         this.observadores = new ArrayList<>();
     }
 

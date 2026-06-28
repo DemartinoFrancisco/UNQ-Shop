@@ -1,6 +1,6 @@
 package catalogo;
 
-
+import reportes.ReporteVisitor;
 
 public class Producto extends Item {
 
@@ -45,6 +45,12 @@ public class Producto extends Item {
     
     public String getCategoria() {
         return this.categoria;
+    }
+    
+    
+    @Override
+    public void accept(ReporteVisitor visitor) {
+        visitor.visitarProducto(this);
     }
     
     

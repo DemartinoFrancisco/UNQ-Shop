@@ -2,8 +2,8 @@ package notificaciones;
 
 import pedido.Pedido;
 import pedido.Estado;
+import libreriasEInterfacesExternas.MailSender;
 import pedido.Entregado;
-import libreriasExternas.MailSender;
 
 
 

@@ -2,6 +2,8 @@ package catalogo;
 
 import java.util.List;
 
+import reportes.ReporteVisitor;
+
 
 
 public class Paquete extends Item {
@@ -40,6 +42,12 @@ public class Paquete extends Item {
     
     public List<Item> getItems() {
         return this.items;
+    }
+    
+    
+    @Override
+    public void accept(ReporteVisitor visitor) {
+        visitor.visitarPaquete(this);
     }
     
     

@@ -1,6 +1,6 @@
 package envio;
 
-import libreriasExternas.EnvioExpress;
+import libreriasEInterfacesExternas.EnvioExpress;
 import pedido.Pedido;
 
 

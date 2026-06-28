@@ -3,6 +3,8 @@ package pedido;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
+import catalogo.Deposito;
 import catalogo.Item;
 import envio.Estrategia;
 import pago.Cliente;
@@ -74,6 +76,16 @@ public class Pedido extends Observable {
     
     public Cliente getCliente() {
         return this.cliente;
+    }
+    
+    
+    public LocalDate getFecha() {
+    	return this.fecha;
+    }
+    
+    
+    public Estado getEstado() {
+        return this.estado;
     }
 
 
