@@ -6,7 +6,7 @@ import pedido.Pedido;
 
 
 
-public class Estandar implements Estrategia {
+public class Estandar implements EstrategiaDeEnvio {
 
 
 

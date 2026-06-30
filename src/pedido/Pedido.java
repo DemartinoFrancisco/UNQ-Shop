@@ -6,7 +6,7 @@ import java.util.List;
 
 import catalogo.Deposito;
 import catalogo.Item;
-import envio.Estrategia;
+import envio.EstrategiaDeEnvio;
 import pago.Cliente;
 import notificaciones.Observable;
 
@@ -20,13 +20,13 @@ public class Pedido extends Observable {
     private List<Item> items;
     private LocalDate fecha;
     private Cliente cliente;
-    private Estrategia metodoDeEnvio;
+    private EstrategiaDeEnvio metodoDeEnvio;
     private Deposito deposito;
 
 
  // mensajes publicos (Los que usa el usuario desde el main por ejemplo)
     
-    public Pedido(Cliente cliente, Estrategia metodoDeEnvio, Deposito deposito) {
+    public Pedido(Cliente cliente, EstrategiaDeEnvio metodoDeEnvio, Deposito deposito) {
     	super();
         this.cliente = cliente;
         this.metodoDeEnvio = metodoDeEnvio;

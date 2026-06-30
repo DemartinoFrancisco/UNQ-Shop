@@ -5,7 +5,7 @@ import pedido.Pedido;
 
 
 
-public class Express implements Estrategia {
+public class Express implements EstrategiaDeEnvio {
 
 
 // Si no escribis ningún constructor en tu clase, Java te crea uno "invisible" y vacío por defecto( y como ni estrategiaDeEnvio ni esta clase tienen atributos, no hay nada que inicializar tampoco ).

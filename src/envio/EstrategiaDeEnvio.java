@@ -4,7 +4,7 @@ import pedido.Pedido;
 
 
 
-public interface Estrategia {
+public interface EstrategiaDeEnvio {
 
 
 

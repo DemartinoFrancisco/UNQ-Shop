@@ -5,7 +5,7 @@ import pedido.Pedido;
 
 
 
-public class Sucursal implements Estrategia {
+public class Sucursal implements EstrategiaDeEnvio {
 
 
 
