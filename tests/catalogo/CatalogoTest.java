@@ -1,4 +1,4 @@
-package testsCatalogo;
+package catalogo;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;

@@ -1,4 +1,4 @@
-package testsCatalogo;
+package catalogo;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -30,7 +30,7 @@ public class PaqueteTest {
         
         List<Item> itemsDelPaquete = Arrays.asList(itemMock1, itemMock2);
         
-        paquete = new Paquete("Kit Gamer", "Mouse y Teclado", 0.0, 2.0, 0.10, itemsDelPaquete);
+        paquete = new Paquete("Kit Gamer", "Mouse y Teclado", 100.0, 2.0, 0.10, itemsDelPaquete);
         visitorMock = mock(ReporteVisitor.class);
     }
 
