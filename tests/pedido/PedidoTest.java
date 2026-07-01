@@ -4,12 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import java.time.LocalDate;
 import catalogo.Deposito;
 import catalogo.Item;
 import envio.EstrategiaDeEnvio;
 import pago.Cliente;
-import libreriasEInterfacesExternas.Direccion;
 
 
 
@@ -23,7 +21,6 @@ public class PedidoTest {
     private Deposito depositoMock;
     private Item itemMock1;
     private Item itemMock2;
-    private Direccion direccionMock;
 
     
     
@@ -34,7 +31,6 @@ public class PedidoTest {
         depositoMock = mock(Deposito.class);
         itemMock1 = mock(Item.class);
         itemMock2 = mock(Item.class);
-        direccionMock = mock(Direccion.class);
         
         pedido = new Pedido(clienteMock, envioMock, depositoMock);
     }

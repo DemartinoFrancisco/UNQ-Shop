@@ -6,8 +6,6 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import catalogo.Catalogo;
-import catalogo.Item;
 import busqueda.Criterio;
 import reportes.ReporteVisitor;
 
